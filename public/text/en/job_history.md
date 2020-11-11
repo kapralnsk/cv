@@ -20,9 +20,9 @@
 * Administrative tasks: took part in department’s task management, growth planning, performance review, job interviews.
 ### Academ Media: System development department
 #### Software Development Team Lead (November 2015 - February 2017):
-* Architecture & development of backends for mobile apps and web-dashboards for backends;
-  * Common stacks: Python3.5/aiohttp, Node.js/ExpressJS/React for
-dashboards.
+* Architecture & development of backends for mobile apps and web-dashboards for backends on Python3.5/aiohttp and Node.js/ExpressJS/React stacks. Most notable projects:
+  * mobile push notification system (similar to OneSignal, but smaller);
+  * payment gateway aggregator.
 * Frontend and backend teams management (2-7 people): task distribution, internal QA, communications with other departments;
 * DevOps tasks: Gitlab CI integration, service environment configuration on Debian 8+ & CentOS 7 (configuration of nginx, DBMS, service deployment; deployment automation via Ansible).
 ### Academ Media: System development department
