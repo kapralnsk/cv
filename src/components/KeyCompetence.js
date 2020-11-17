@@ -21,7 +21,7 @@ const TEXTS = {
 class KeyCompetenceComponent extends React.Component {
     constructor(props) {
         super(props)
-        this.state = TEXTS.ru
+        this.state = TEXTS[props.language]
     }
 
     componentDidUpdate(prevProps) {

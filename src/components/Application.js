@@ -24,10 +24,23 @@ const AppContentDiv = styled.div`
   display: flex;
 `
 
+function getLanguage(){
+    const fallbackLang = 'en'
+    // window.navigator.language seems to be inconsistent across browsers,
+    // so making precautionary check, that we actually got something
+    // (might be redundant)
+    if (!window.navigator.language) {
+        return fallbackLang
+    }
+    // some browsers (looking at you Firefox) return full locale instead of just lang,
+    // so slicing first 2 characters  
+    return window.navigator.language.slice(0,2) === 'ru' ? 'ru' : fallbackLang
+}
+
 class Application extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {language: 'ru'}
+        this.state = {language: getLanguage()}
         this.handleLangChange = this.handleLangChange.bind(this)
         this.getAppContentRef = this.getAppContentRef.bind(this)
         this.appContentRef = React.createRef()
