@@ -8,6 +8,7 @@ import KeyCompetenceComponent from './KeyCompetence'
 import JobHistoryComponent from './JobHistory'
 import AboutComponent from './About'
 import FooterComponent from './Footer'
+import TitleComponent from './Title'
 
 const AppWrapper = styled.div`
     min-width: 600px
@@ -85,6 +86,7 @@ class AppContent extends React.Component {
                             <PersonalInfoComponent {...this.props} />
                         </Grid.Column>
                         <Grid.Column width={11}>
+                            <TitleComponent {...this.props} />
                             <KeyCompetenceComponent {...this.props} />
                         </Grid.Column>
                     </Grid.Row>
