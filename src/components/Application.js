@@ -67,6 +67,7 @@ class Application extends React.Component {
                 onLangChange={this.handleLangChange}
                 onPrintButtonClick={this.handlePrintButtonClick}
                 getAppContentRef={this.getAppContentRef}
+                language={this.state.language}
                 />
             </AppMenuDiv>
             <AppContent {...this.state} ref={this.setAppContentRef}/>

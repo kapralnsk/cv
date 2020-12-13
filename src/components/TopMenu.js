@@ -13,6 +13,7 @@ class TopMenuComponent extends React.Component {
             <Menu.Menu position='right'>
                 <LanguageComponent
                 onLangChange={this.props.onLangChange}
+                language={this.props.language}
                 />
             </Menu.Menu> 
         </Menu>
