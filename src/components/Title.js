@@ -24,7 +24,7 @@ class TitleComponent extends React.Component {
     render() {
         return(
             <div>
-                <h1>Middle/Senior Python developer</h1>
+                <h1>Senior Python developer</h1>
                 <h5>{this.state.employment_type}</h5>
             </div>
         )
