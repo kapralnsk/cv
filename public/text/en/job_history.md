@@ -1,5 +1,18 @@
 ## Work experience
 
+### 360bound: gather.gg project
+#### Backend developer (December 2020 - June 2021)
+Backend development for cybersports tournaments platform. Project stack consisted of: Python 3.9, pytest, Django 4.2 + DRF; PostgreSQL 11, Celery, Redis 5.
+##### Responsibilities
+* Development of platform's backend;
+* New team mebmers onboarding;
+* Cross code-review with other team members;
+* Post-incident investigations.
+##### Accomplishments
+* New tournmanet participation system, which allowed for: temporary teams (needed only for the duration of a tournament), invitations to a team for a tournament, and tournament joining requests system.
+* Refactoring of bracket tournaments mechanisms (Single/Double elimination): implementation of manual seeding algorithm;
+* Migration from Github + CircleCI to Gitlab + GitlabCI: helped DevOps team to debug and resolve a number of issues with building and deployment.
+
 ### Freelance projects (October 2020):
 * Initial infrastructure services deployment for an outsorcing software developer. Included LDAP, source code repository, task tracker, and a VPN server as an entry point to mentioned services.
 
