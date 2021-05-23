@@ -40,6 +40,7 @@ class KeyCompetenceComponent extends React.Component {
                         <List bulleted horizontal>
                             <List.Item></List.Item>
                             <List.Item>Python 3</List.Item>
+                            <List.Item>pytest</List.Item>
                             <List.Item>Django</List.Item>
                             <List.Item>Django REST Framework</List.Item>
                             <List.Item>asyncio</List.Item>
