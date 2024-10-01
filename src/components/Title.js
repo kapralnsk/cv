@@ -2,10 +2,10 @@ import React from 'react'
 
 const TEXTS = {
     ru: {
-        employment_type: 'Полный рабочий день, удаленно (желательно), или офис в Новосибирске'
+        employment_type: 'Полный рабочий день, удаленно.'
     },
     en: {
-        employment_type: 'Full-time, remote (prefered), or office in Novosibirsk'
+        employment_type: 'Full-time, remote.'
     }
 }
 
@@ -18,11 +18,11 @@ class TitleComponent extends React.Component {
     componentDidUpdate(prevProps) {
         if (this.props.language !== prevProps.language) {
             this.setState(TEXTS[this.props.language])
-        } 
+        }
     }
 
     render() {
-        return(
+        return (
             <div>
                 <h1>Senior Python developer</h1>
                 <h5>{this.state.employment_type}</h5>
