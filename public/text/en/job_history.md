@@ -2,7 +2,8 @@
 
 ### hoodies: Clarity Value
 #### Backend developer (September 2021 - September 2024)
-Development of backend for ERP system oriented at US municipal agencies. The project stack consisted of: Python 3.9, pytest, Django 3.2 + DRF, PostgreSQL 11, Celery, Redis 5, Google Cloud Platform, Github Actions. At the start of my work, the project was a Django app with ~50% unit-test coverage, 2 environments (staging & prod) of 1 Google App Engine instance each, a high percentage of incidents, noticeable tech-debt and weak team development processes (i.e. pre-commit hooks, ability to deploy a feature branch, enforcing responsibility areas for code-review). In my 3 years of work on the project, besides working on business features and customer support, unit-test coverage went up to 90%, system had 3 environments (staging, sales demo & prod) deployed in Google Kubernetes Engine with an ability to scale and create feature-branch environments, percentage of incidents declined noticeably due to reduction in tech-debt and strengthening of team development processes (team peaked at 7 engineers where it was previously 2 at most), project was ready for SOC2 certification.
+Development of backend for ERP system oriented at US municipal agencies. The project stack consisted of: Python 3.9, pytest, Django 3.2 + DRF, PostgreSQL 11, Celery, Redis 5, Google Cloud Platform, Github Actions. During my time on the project, I implemented several client-requested features that helped the sales team secure contracts with municipalities in 3 new states. Moreover, unit-test coverage has been increased, the app was set up for SOC2 certification, app stability increased, a first stress test was conducted, and developer experience measures were put in place which allowed for a larger engineering team to work on the app.
+
 ##### Responsibilities
 * Development of the platform's backend;
 * New team members onboarding;
@@ -15,10 +16,7 @@ Development of backend for ERP system oriented at US municipal agencies. The pro
 * Open Records Request functionality: allows government agencies to process requests under FOIA. Implementation includes: accepting state duty payments through Stripe or Shopify; document versioning and the ability to redact them; allowing temporary access to a document package for a requester with subsequent deletion after set TTL (30 days);
 * Request review functionality: allows government agencies to give feedback on the request (requesting changes in the data intake, approving or denying the request);
 * Electronic request signature functionality (in the form of a signature image with a timestamp and IP address attached), including the ability to 3rd-party sign through an invite by the requester;;
-* Preparations for SOC2 certification;
 * File handling migration from Google Cloud Storage library to boto3 - allowed to move file handling to S3 protocol;
-* Automatic generation of periodical (weekly, quarterly, and yearly) aggregated reports on requests status (number of open, new, and closed requests in a timeframe);
-* Integration with SSO providers for auth in the app (using a Microsoft account at first);
 * Built infrastructure for stress testing: creation of test environment, test implementation via locust.io platform, conducted testing up until a report could be formed for the business side with results and recommendations;
 * Reduction of tech-debt in Developer Experience area: implemented checks in pre-commit hooks, fixed and improved CI based on Github Actions. Helped DevOps in app migration to k8s and in the implementation of Feature-branch deployment
 
